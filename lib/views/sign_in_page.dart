@@ -20,6 +20,8 @@ class _SignInPageState extends State<SignInPage> {
       _isLoading = true;
     });
 
+    await Provider.of<Auth>(context, listen: false).signInAnonymously();
+
     setState(() {
       _isLoading = false;
     });
