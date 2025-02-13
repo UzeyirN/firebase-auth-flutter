@@ -1,0 +1,33 @@
+// Root-level build.gradle (Groovy format)
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'  // Android Gradle Plugin
+        classpath 'com.google.gms:google-services:4.4.2'  // Firebase plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0"  // Kotlin Gradle Plugin versiyası
+    }
+}
+
+allprojects {
+    repositories {
+        google()          // Firebase SDK-ları üçün lazım
+        mavenCentral()    // Maven Central
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
