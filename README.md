@@ -1,16 +1,11 @@
-# firebase_test
+A new Flutter project
+Users can log in to the program using various login methods.
 
-A new Flutter project.
+This program is dedicated to learning and implementing the following: 
+* Learning and implementing Firebase authentication
+* Learning and implementing Firebase using
+* Implementing and learning Stream,StreamSubscription and StreamBuilder
+* Log in operations : Anonymously, With Email-Password and Google sign in
+* Log out and Reset operations
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
